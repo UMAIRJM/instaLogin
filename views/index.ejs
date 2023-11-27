@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/scripts/logic.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <img src="/assests/instaWritten.png" alt="instaLogo" id="imageDesign">
+    </div>
+    <div class="secondButton">
+        <button class="buttonStyle" id="loginButton">
+            <i data-feather="facebook" class="iconClass" ></i>
+            Continue with Facebook
+        </button>
+        <p class="writingClass">OR</p>
+        <form action="submit" method="post" class="formClass">
+            <input type="text" name="email" id="email" class="styleClass1" placeholder="Phone number,username, or email">
+            <input type="password" name="password" id="password" class="styleClass2" placeholder="Password">
+            <button type="submit" class="styleClass3" id="login">Log in</button>
+        </form>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
