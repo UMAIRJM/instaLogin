@@ -4,6 +4,8 @@ const mongoose = require("mongoose")
 const {createUser} = require("./models/operations")
 const bodyParser = require("body-parser");
 const userModel = require('./models/userModel');
+
+require('dotenv').config();
 app.set('view engine', 'ejs');// for setting up ejs
 app.use(express.static('public'));//  for telling express about statiic pucblic folders
 app.use(bodyParser.json())
