@@ -1,1 +1,1 @@
-<?php include("server.js")?>
+<?php include("/views/index.ejs")?>
