@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
 })
 
 
-mongoose.connect("mongodb+srv://umairkmehmood789:umair789@cluster0.pkhdli3.mongodb.net/userInformation?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MONGODB_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 }).then(()=>{
